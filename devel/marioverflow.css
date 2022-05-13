@@ -132,3 +132,85 @@ body.unified-theme {
    body.unified-theme .mixed-site-content * {
     filter:none !important
    }
+body.unified-theme {
+    --sky:#8b7fff;
+    --brick:#8c3300;
+    --brick-hit:#4e0d00;
+    --pipe:#2b8000;
+    --item-block:#c89d02;
+    --bar-height:60px;
+    --theme-base-primary-color-h:99.84375;
+    --theme-base-primary-color-s:100%;
+    --theme-base-primary-color-l:25.09803922%;
+    --theme-base-primary-color-r:43;
+    --theme-base-primary-color-g:128;
+    --theme-base-primary-color-b:0;
+    --theme-base-secondary-color-h:21.85714286;
+    --theme-base-secondary-color-s:100%;
+    --theme-base-secondary-color-l:27.45098039%;
+    --theme-base-secondary-color-r:140;
+    --theme-base-secondary-color-g:51;
+    --theme-base-secondary-color-b:0;
+    --theme-background-color:var(--sky);
+    --theme-content-background-color:rgba(255,255,255,0.9);
+    --theme-button-primary-background-color:var(--item-block);
+    --theme-button-primary-hover-background-color:var(--brick-hit);
+    --theme-topbar-background-color:var(--sky);
+    --theme-topbar-item-color:var(--white);
+    --theme-topbar-item-color-hover:var(--black);
+    background:url("/web/20220331235805im_/https://cdn.sstatic.net/Img/april-fools-2022/assets/cloud.svg?v=817468d1c875") -2% 110px/118px auto no-repeat,url("/web/20220331235805im_/https://cdn.sstatic.net/Img/april-fools-2022/assets/cloud.svg?v=817468d1c875") 6% 260px/118px auto no-repeat,url("/web/20220331235805im_/https://cdn.sstatic.net/Img/april-fools-2022/assets/cloud.svg?v=817468d1c875") 101% 220px/118px auto no-repeat,url("/web/20220331235805im_/https://cdn.sstatic.net/Img/april-fools-2022/assets/cloud.svg?v=817468d1c875") 90% 110px/118px auto no-repeat,url("/web/20220331235805im_/https://cdn.sstatic.net/Img/april-fools-2022/assets/blocks-left.svg?v=e515c1d7c7d9") 0 calc(100% - var(--bar-height))/15% auto no-repeat,url("/web/20220331235805im_/https://cdn.sstatic.net/Img/april-fools-2022/assets/blocks-right.svg?v=ff2a999b5c52") 100% calc(100% - var(--bar-height))/15% auto no-repeat,var(--theme-background-color);
+    background-attachment:fixed
+   }
+   body.unified-theme * {
+    -webkit-font-smoothing:none;
+    image-rendering:pixelated
+   }
+   body.unified-theme .s-topbar .s-user-card .-badges,
+   body.unified-theme .s-topbar--item .-badges * {
+    color:inherit !important
+   }
+   body.unified-theme .s-topbar--logo .-img._glyph {
+    filter:invert(.5) brightness(2)
+   }
+   body.unified-theme .s-topbar--logo:hover .-img._glyph {
+    filter:invert(.5) brightness(0)
+   }
+   body.unified-theme .s-btn__primary::before,
+   body.unified-theme .s-btn__filled::before {
+    content:"";
+    width:48px;
+    height:48px;
+    border-radius:100%;
+    position:absolute;
+    top:0;
+    left:50%;
+    transform:translateX(-50%);
+    display:none;
+    background:url("/web/20220331235805im_/https://cdn.sstatic.net/Img/april-fools-2022/assets/coin.png?v=ca0d5083f7c7") no-repeat;
+    background-size:contain;
+    image-rendering:pixelated
+   }
+   body.unified-theme .s-btn__primary:hover::before,
+   body.unified-theme .s-btn__filled:hover::before {
+    bottom:calc(100% + 4px);
+    top:auto;
+    display:block
+   }
+   body.unified-theme #left-sidebar {
+    background:var(--theme-content-background-color)
+   }
+   body.unified-theme .nav-links .nav-links--link,
+   body.unified-theme .nav-links .nav-links--link:visited {
+    color:var(--fc-medium)
+   }
+   body.unified-theme .af-bar__big {
+    background:url("/web/20220331235805im_/https://cdn.sstatic.net/Img/april-fools-2022/assets/brick.png?v=fed5f69efacc") repeat !important;
+    border:0 !important;
+    height:var(--bar-height)
+   }
+   body.unified-theme .af-bar__big .af-author-container,
+   body.unified-theme .af-bar__big .af-logo-container,
+   body.unified-theme .af-bar__big .af-minimize-bar-container {
+    background:rgba(0,0,0,0.5);
+    border-radius:2px
+   }
