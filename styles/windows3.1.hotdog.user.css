@@ -1,8 +1,8 @@
 /* ==UserStyle==
-@name           Windows 3.1 Filter
+@name           Windows 3.1 Hotdog Filter
 @namespace      github.com/zurgeg/so-filters
 @version        2.0.0
-@description    Windows 3.1 Filter
+@description    The worst UI/UX design you will ever see.
 @author         zurgeg
 ==/UserStyle== */
 @-moz-document domain("stackoverflow.com") {
@@ -413,5 +413,58 @@
     body.unified-theme::-webkit-scrollbar-button:horizontal:end:decrement,
     body.unified-theme *::-webkit-scrollbar-button:horizontal:end:decrement {
         display: none
+    }
+    body.unified-theme {
+        --theme-base-primary-color-h: 0;
+        --theme-base-primary-color-s: 100%;
+        --theme-base-primary-color-l: 47.5%;
+        --theme-base-primary-color-r: 242;
+        --theme-base-primary-color-g: 0;
+        --theme-base-primary-color-b: 0;
+        --theme-base-secondary-color-h: 0;
+        --theme-base-secondary-color-s: 100%;
+        --theme-base-secondary-color-l: 47.5%;
+        --theme-base-secondary-color-r: 242;
+        --theme-base-secondary-color-g: 0;
+        --theme-base-secondary-color-b: 0;
+        --theme-background-color: #fbfb00;
+        --theme-button-active-background-color: #f1f2f3;
+        --theme-button-color: #000000;
+        --theme-button-hover-background-color: #fafafb;
+        --theme-button-hover-color: #000000;
+        --theme-button-selected-background-color: #e9eaec;
+        --theme-button-selected-color: #000000;
+        --theme-button-filled-active-background-color: #e9eaec;
+        --theme-button-filled-active-border-color: #c0c4c8;
+        --theme-button-filled-background-color: #fafafb;
+        --theme-button-filled-border-color: #2a2a2a;
+        --theme-button-filled-color: #000000;
+        --theme-button-filled-hover-background-color: #f1f2f3;
+        --theme-button-filled-hover-color: #000000;
+        --theme-button-filled-selected-background-color: #d6d9db;
+        --theme-button-filled-selected-border-color: #b2b7bc;
+        --theme-button-filled-selected-color: #000000;
+        --theme-button-outlined-border-color: #d6d9db;
+        --theme-button-outlined-selected-border-color: #2a2a2a;
+        --theme-button-primary-active-background-color: #c0c4c8;
+        --theme-button-primary-background-color: #c0c4c8;
+        --theme-button-primary-color: #000000;
+        --theme-button-primary-hover-background-color: #b2b7bc;
+        --theme-button-primary-hover-color: #000000;
+        --theme-button-primary-number-color: #79828a;
+        --theme-button-primary-selected-background-color: #959ba2;
+        --theme-content-background-color: #fbfb00;
+        --theme-content-border-color: #2a2a2a;
+        --theme-footer-background-color: #000000;
+        --theme-link-color: #0e06ab;
+        --theme-link-color-hover: #3f38bc;
+        --theme-link-color-visited: #0c0592;
+        --theme-header-background-color: #0e06ab;
+        --theme-header-link-color: #0e06ab;
+        --theme-post-owner-background-color: #f6f6f7;
+        --theme-tag-background-color: #f6f6f7;
+        --theme-tag-color: #878f96;
+        --theme-tag-hover-background-color: #f1f2f3;
+        --theme-tag-hover-color: #79828a
     }
 }
