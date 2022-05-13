@@ -1,13 +1,13 @@
 /* ==UserStyle==
-@name           MariOverflow Filter (BETA)
+@name           MariOverflow Filter
 @namespace      github.com/zurgeg/so-filters
-@version        1.0.0
-@description    (Somewhat Broken) MariOverflow Filter
+@version        2.0.0
+@description    MariOverflow Filter
 @author         zurgeg
 ==/UserStyle== */
 
 @-moz-document domain("stackoverflow.com") {
-    body.unified-theme {
+body.unified-theme {
     --theme-question-title-color:var(--theme-body-color);
     --theme-question-title-font-family:var(--theme-body-font-family);
     --theme-question-body-font-family:var(--theme-body-font-family);
@@ -141,7 +141,7 @@
    body.unified-theme .mixed-site-content * {
     filter:none !important
    }
-   body.unified-theme {
+body.unified-theme {
     --sky:#8b7fff;
     --brick:#8c3300;
     --brick-hit:#4e0d00;
