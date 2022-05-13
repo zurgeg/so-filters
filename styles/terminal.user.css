@@ -1,0 +1,248 @@
+/* ==UserStyle==
+@name           Terminal Filter
+@namespace      github.com/zurgeg/so-filters
+@version        1.0.0
+@description    (Only works on Dark Mode) Terminal Filter for SO
+@author         zurgeg
+==/UserStyle== */
+@-moz-document domain("stackoverflow.com") {
+    body.unified-theme {
+        --theme-question-title-color: var(--theme-body-color);
+        --theme-question-title-font-family: var(--theme-body-font-family);
+        --theme-question-body-font-family: var(--theme-body-font-family);
+        --theme-question-title-color: var(--theme-link-color);
+        --theme-question-title-color-hover: var(--theme-link-color-hover);
+        --theme-question-title-color-visited: var(--theme-link-color-visited)
+    }
+    body.unified-theme .s-btn__muted {
+        color: var(--fc-light)
+    }
+    body.unified-theme .s-btn__muted:hover,
+    body.unified-theme .s-btn__muted:focus,
+    body.unified-theme .s-btn__muted:active {
+        color: var(--fc-medium);
+        background-color: var(--black-025)
+    }
+    body.unified-theme .s-btn__muted:active {
+        background: var(--black-025)
+    }
+    body.unified-theme .s-btn__muted.is-selected {
+        color: var(--fc-medium);
+        background-color: var(--black-075)
+    }
+    body.unified-theme .s-btn__muted.s-btn__outlined {
+        border-color: var(--black-300)
+    }
+    body.unified-theme .s-btn__muted.s-btn__outlined.is-selected {
+        border-color: var(--black-400)
+    }
+    body.unified-theme .s-btn__muted.s-btn__filled {
+        color: var(--fc-medium);
+        background-color: var(--black-100)
+    }
+    body.unified-theme .s-btn__muted.s-btn__filled:hover,
+    body.unified-theme .s-btn__muted.s-btn__filled:focus,
+    body.unified-theme .s-btn__muted.s-btn__filled:active {
+        color: var(--fc-medium);
+        background-color: var(--black-150)
+    }
+    body.unified-theme .s-btn__muted.s-btn__filled:active {
+        background-color: var(--black-200)
+    }
+    body.unified-theme .s-btn__muted.s-btn__filled.is-selected {
+        color: var(--fc-dark);
+        background-color: var(--black-350)
+    }
+    body.unified-theme .s-sidebarwidget {
+        --sidebarwidget-outer-border-color: var(--bc-medium);
+        --sidebarwidget-content-separator-color: var(--bc-light);
+        --sidebarwidget-header-background-color: var(--black-025);
+        --sidebarwidget-background-color: var(--white);
+        border: 1px solid var(--sidebarwidget-outer-border-color);
+        background-color: var(--sidebarwidget-background-color)
+    }
+    body.unified-theme .s-sidebarwidget:not(.s-anchors) a:not(.button):not(.s-btn):not(.post-tag):not(.s-sidebarwidget--action):not(.s-user-card--link),
+    body.unified-theme .s-sidebarwidget:not(.s-anchors) a:not(.button):not(.s-btn):not(.post-tag):not(.s-sidebarwidget--action):not(.s-user-card--link):visited {
+        color: var(--fc-light)
+    }
+    body.unified-theme .s-sidebarwidget:after {
+        border-top: 1px solid var(--sidebarwidget-outer-border-color)
+    }
+    @supports ((-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)) or (clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%))) or (-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)) {
+        body.unified-theme .s-sidebarwidget:after {
+            border: 1px solid var(--sidebarwidget-outer-border-color)
+        }
+    }
+    body.unified-theme .s-sidebarwidget .s-sidebarwidget--header,
+    body.unified-theme .s-sidebarwidget .s-sidebarwidget--content {
+        border-top: 1px solid var(--sidebarwidget-content-separator-color)
+    }
+    body.unified-theme .s-sidebarwidget .s-sidebarwidget--header {
+        background: var(--sidebarwidget-header-background-color);
+        color: var(--fc-medium)
+    }
+    body.unified-theme .s-sidebarwidget .s-sidebarwidget--action {
+        color: var(--theme-link-color)
+    }
+    body.unified-theme .s-sidebarwidget .s-sidebarwidget--item,
+    body.unified-theme .s-sidebarwidget .s-sidebarwidget--item > :first-child {
+        color: var(--fc-dark)
+    }
+    body.unified-theme .s-sidebarwidget .s-sidebarwidget--subnav[aria-current="true"],
+    body.unified-theme .s-sidebarwidget .s-sidebarwidget--subnav[aria-current="page"] {
+        color: var(--fc-dark)
+    }
+    body.unified-theme .s-sidebarwidget__yellow,
+    body.unified-theme .s-sidebarwidget__blue,
+    body.unified-theme .s-sidebarwidget__green {
+        border-color: var(--sidebarwidget-outer-border-color);
+        background-color: var(--sidebarwidget-background-color)
+    }
+    body.unified-theme .s-sidebarwidget__yellow .s-sidebarwidget--header,
+    body.unified-theme .s-sidebarwidget__blue .s-sidebarwidget--header,
+    body.unified-theme .s-sidebarwidget__green .s-sidebarwidget--header {
+        background-color: var(--sidebarwidget-background-color);
+        color: var(--fc-medium)
+    }
+    body.unified-theme .s-sidebarwidget__yellow .s-sidebarwidget--header,
+    body.unified-theme .s-sidebarwidget__blue .s-sidebarwidget--header,
+    body.unified-theme .s-sidebarwidget__green .s-sidebarwidget--header,
+    body.unified-theme .s-sidebarwidget__yellow .s-sidebarwidget--content,
+    body.unified-theme .s-sidebarwidget__blue .s-sidebarwidget--content,
+    body.unified-theme .s-sidebarwidget__green .s-sidebarwidget--content {
+        border-color: var(--sidebarwidget-outer-border-color)
+    }
+    body.unified-theme .s-sidebarwidget__yellow:after,
+    body.unified-theme .s-sidebarwidget__blue:after,
+    body.unified-theme .s-sidebarwidget__green:after {
+        border-color: var(--sidebarwidget-outer-border-color)
+    }
+    body.unified-theme .s-breadcrumbs {
+        color: var(--fc-light)
+    }
+    body.unified-theme .s-breadcrumbs .s-breadcrumbs--link {
+        color: var(--fc-light)
+    }
+    body.unified-theme .s-breadcrumbs .s-breadcrumbs--link:hover {
+        color: var(--fc-medium)
+    }
+    body.unified-theme #question-header .question-hyperlink {
+        color: var(--theme-body-font-color)
+    }
+    body.unified-theme .s-topbar--item:hover .-badges * {
+        color: inherit !important
+    }
+    body.unified-theme .js-zone-container,
+    body.unified-theme #hireme,
+    body.unified-theme .mixed-site-content,
+    body.unified-theme .js-zone-container *,
+    body.unified-theme #hireme *,
+    body.unified-theme .mixed-site-content * {
+        filter: none !important
+    }
+    body.theme-dark {
+        --theme-base-primary-color-h: 120;
+        --theme-base-primary-color-s: 100%;
+        --theme-base-primary-color-l: 50%;
+        --theme-base-primary-color-r: 0;
+        --theme-base-primary-color-g: 255;
+        --theme-base-primary-color-b: 0;
+        --theme-base-secondary-color-h: 120;
+        --theme-base-secondary-color-s: 100%;
+        --theme-base-secondary-color-l: 50%;
+        --theme-base-secondary-color-r: 0;
+        --theme-base-secondary-color-g: 255;
+        --theme-base-secondary-color-b: 0;
+        --theme-background-color: #000111;
+        --theme-body-font-color: var(--theme-primary-color);
+        --theme-button-primary-color: #000000;
+        --theme-button-primary-hover-color: #000000;
+        --theme-button-primary-selected-color: #000000;
+        --theme-content-background-color: #000111;
+        --theme-content-border-color: var(--theme-primary-color);
+        --theme-link-color-hover: #ffffff;
+        --theme-link-color-visited: var(--fc-dark);
+        --theme-body-font-family: VT323, monospace;
+        --theme-topbar-background-color: var(--theme-content-background-color);
+        --theme-topbar-item-background-hover: var(--theme-secondary-color);
+        --theme-topbar-item-border-current: var(--theme-secondary-color);
+        --theme-topbar-item-color: var(--theme-secondary-color);
+        --theme-topbar-item-color-hover: var(--theme-content-background-color);
+        --theme-topbar-search-border-focus: var(--theme-secondary-color);
+        --fc-dark: var(--theme-secondary-300);
+        --fc-medium: var(--theme-secondary-500);
+        --fc-light: var(--theme-secondary-600);
+        --bc-lightest: var(--fc-light);
+        --bc-lighter: var(--fc-light);
+        --bc-light: var(--fc-medium);
+        --bc-medium: var(--fc-medium);
+        --bc-dark: var(--fc-dark);
+        --bc-darker: var(--fc-dark);
+        font-size-adjust: .5
+    }
+    body.theme-dark * {
+        -webkit-font-smoothing: none;
+        image-rendering: pixelated
+    }
+    body.theme-dark a:not(.s-btn),
+    body.theme-dark a:not(.s-btn):hover,
+    body.theme-dark .s-link,
+    body.theme-dark .s-link:hover {
+        text-decoration: underline;
+        text-decoration-skip-ink: none
+    }
+    body.theme-dark .s-topbar .s-user-card .-badges,
+    body.theme-dark .s-topbar--item .-badges * {
+        color: inherit !important
+    }
+    body.theme-dark * {
+        border-radius: 0 !important
+    }
+    body.theme-dark .s-topbar--logo .-img._glyph {
+        filter: invert(.5) brightness(2) sepia(1) brightness(1) contrast(1) saturate(100) hue-rotate(45deg)
+    }
+    body.theme-dark [class*="gravatar-wrapper-"],
+    body.theme-dark .s-avatar,
+    body.theme-dark .js-usermini-avatar-container {
+        background: var(--theme-primary-color)
+    }
+    body.theme-dark [class*="gravatar-wrapper-"] img,
+    body.theme-dark .s-avatar img,
+    body.theme-dark .js-usermini-avatar-container img {
+        filter: grayscale(1) contrast(200%);
+        mix-blend-mode: multiply
+    }
+    body.theme-dark [class*="user-gravatar"] {
+        background: var(--theme-primary-color)
+    }
+    body.theme-dark [class*="user-gravatar"] span {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        filter: grayscale(1);
+        mix-blend-mode: multiply
+    }
+    body.theme-dark .s-btn__primary {
+        color: var(--theme-button-primary-color) !important
+    }
+    body.theme-dark #question-header .question-hyperlink {
+        color: var(--theme-body-font-color)
+    }
+    body.theme-dark .flush-left {
+        border-top-color: var(--bc-medium)
+    }
+    body.theme-dark .af-bar {
+        background-color: var(--theme-background-color) !important;
+        color: var(--theme-body-font-color) !important
+    }
+    body.theme-dark .af-bar .af-logo-img {
+        filter: invert(.5) brightness(2) sepia(1) brightness(1) contrast(1) saturate(100) hue-rotate(45deg)
+    }
+    body.theme-dark .af-bar .af-theme-button {
+        --af-btn-outline-color: var(--theme-primary-color);
+        --af-btn-focus-outline-color: var(--red-500);
+        --af-btn-selected-outline-color: #ffffff;
+        background: var(--theme-background-color);
+        border-radius: 50% !important
+    }
+}
