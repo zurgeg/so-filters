@@ -132,3 +132,47 @@ body.unified-theme {
    body.unified-theme .mixed-site-content * {
     filter:none !important
    }
+body.unified-theme {
+    --theme-base-primary-color-h:221;
+    --theme-base-primary-color-s:42.3%;
+    --theme-base-primary-color-l:30.6%;
+    --theme-base-primary-color-r:45;
+    --theme-base-primary-color-g:66;
+    --theme-base-primary-color-b:111;
+    --theme-background-color:#eaebef;
+    --theme-button-primary-background-color:#4e629d;
+    --theme-footer-background-color:var(--theme-primary-color);
+    --theme-footer-link-color:#cad6e2;
+    --theme-footer-link-color-hover:#ffffff;
+    --theme-footer-text-color:#cad6e2;
+    --theme-footer-title-color:#a4ccf4;
+    --theme-header-background-color:var(--theme-primary-color);
+    --theme-header-link-color:var(--theme-primary-color);
+    --theme-post-owner-background-color:#eeedf2;
+    --theme-topbar-background-color:#3b5999;
+    --theme-topbar-item-background-hover:var(--theme-primary-color);
+    --theme-topbar-item-color:#1c3163;
+    --theme-topbar-item-color-hover:#a8bcee;
+    --theme-tag-background-color:#eeedf2
+   }
+   body.unified-theme .s-topbar .s-user-card,
+   body.unified-theme .s-topbar .s-navigation .s-navigation--item {
+    color:#fff
+   }
+   body.unified-theme .s-topbar--logo .-img {
+    filter:invert(.5) brightness(2)
+   }
+   body.unified-theme .user-details a {
+    color:#4a6cbd;
+    font-weight:bold
+   }
+   body.unified-theme .js-voting-container {
+    color:#6b7179 !important
+   }
+   body.unified-theme .af-bar {
+    background:var(--theme-footer-background-color) !important;
+    background-color:var(--black-800)
+   }
+   body.unified-theme .af-theme-button {
+    --af-btn-focus-outline-color:var(--white)
+   }
